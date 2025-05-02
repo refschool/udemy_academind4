@@ -1,0 +1,8 @@
+name: Output Event Details on "issus"
+on: issues
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output Event Details
+        run: echo "Event Name: ${{ toJSON(githubb)}}"
